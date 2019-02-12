@@ -65218,7 +65218,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _PagInicial__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PagInicial */ "./resources/js/components/PagInicial.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -65257,7 +65257,7 @@ function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PagInicial__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
     }
   }]);
 
@@ -65265,6 +65265,107 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('app'));
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.js":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Footer.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _imgs_pet_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./imgs/pet.png */ "./resources/js/components/imgs/pet.png");
+/* harmony import */ var _imgs_pet_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_imgs_pet_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _imgs_rural_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./imgs/rural.png */ "./resources/js/components/imgs/rural.png");
+/* harmony import */ var _imgs_rural_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_imgs_rural_png__WEBPACK_IMPORTED_MODULE_2__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'font-awesome/css/font-awesome.min.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+
+
+
+
+var Footer = function Footer() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+    class: "container py-5"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "col-12 col-md"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "col-sm"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _imgs_pet_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    width: "70",
+    height: "100"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "col-sm"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _imgs_rural_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    width: "60",
+    height: "100"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    class: "d-block mb-3 text-muted"
+  }, "Desenvolvido por PET-Sistemas de Informa\xE7\xE3o UFRRJ \xA9 2019")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "col-6 col-md"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "ConectaIdoso"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    class: "list-unstyled text-small"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "text-muted",
+    href: "#"
+  }, "Sobre o PET")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "text-muted",
+    href: "#"
+  }, "Sobre a plataforma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "text-muted",
+    href: "#"
+  }, "Como utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "text-muted",
+    href: "#"
+  }, "Mais Tutoriais")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "col-6 col-md"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Resources"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    class: "list-unstyled text-small"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "text-muted",
+    href: "#"
+  }, "Resource")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "text-muted",
+    href: "#"
+  }, "Resource name")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "text-muted",
+    href: "#"
+  }, "Another resource")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "text-muted",
+    href: "#"
+  }, "Final resource")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "col-6 col-md"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Fale Conosco"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "social-icons"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://r1.ufrrj.br/petsi/"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-globe"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.facebook.com/PetSIUFRRJ/"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-facebook-square"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-youtube"
+  })))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
 
 /***/ }),
 
@@ -65291,10 +65392,59 @@ var Header = function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "navbar-brand",
     to: "/"
-  }, "Tasksman")));
+  }, "ConectaIdoso")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./resources/js/components/PagInicial.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/PagInicial.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
+
+
+
+
+
+var PagInicial = function PagInicial() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PagInicial);
+
+/***/ }),
+
+/***/ "./resources/js/components/imgs/pet.png":
+/*!**********************************************!*\
+  !*** ./resources/js/components/imgs/pet.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/pet.png?a5895f03bc0f3c33b37d160f5b1d12a8";
+
+/***/ }),
+
+/***/ "./resources/js/components/imgs/rural.png":
+/*!************************************************!*\
+  !*** ./resources/js/components/imgs/rural.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/rural.png?b844ec415e82f71286ed0b80172d8629";
 
 /***/ }),
 
@@ -65316,8 +65466,8 @@ var Header = function Header() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
