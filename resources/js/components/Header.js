@@ -2,7 +2,7 @@ import React from 'react'
     import { Link } from 'react-router-dom'
 
     const Header = () => (
-      <nav className='navbar navbar-expand-md navbar-light navbar-laravel'>
+      <nav className='navbar navbar-expand-md navbar-light navbar-laravel' style={estiloHeader}>
         <div className='container'>
           <Link className='navbar-brand' to='/'>ConectaIdoso</Link>
         </div>
@@ -10,3 +10,9 @@ import React from 'react'
     )
 
     export default Header
+
+
+    const estiloHeader = {
+      backgroundColor: 'green',  
+      color:'white',      
+    };
