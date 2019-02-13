@@ -66019,104 +66019,86 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
-var Content = function Content() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-md-3 col-sm-6 mt-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card col text-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-header",
-    style: estiloCard
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-body"
-  }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "card-text"
-  }, "Descri\xE7\xE3o do v\xEDdeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-md-3 col-sm-6 mt-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card col text-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-header",
-    style: estiloCard
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-body"
-  }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "card-text"
-  }, "Descri\xE7\xE3o do v\xEDdeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-md-3 col-sm-6 mt-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card col text-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-header",
-    style: estiloCard
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-body"
-  }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "card-text"
-  }, "Descri\xE7\xE3o do v\xEDdeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-md-3 col-sm-6 mt-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card col text-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-header",
-    style: estiloCard
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-body"
-  }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "card-text"
-  }, "Descri\xE7\xE3o do v\xEDdeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-md-3 col-sm-6 mt-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card col text-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-header",
-    style: estiloCard
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-body"
-  }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "card-text"
-  }, "Descri\xE7\xE3o do v\xEDdeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-md-3 col-sm-6 mt-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card col text-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-header",
-    style: estiloCard
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-body"
-  }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "card-text"
-  }, "Descri\xE7\xE3o do v\xEDdeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-md-3 col-sm-6 mt-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card col text-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-header",
-    style: estiloCard
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-body"
-  }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "card-text"
-  }, "Descri\xE7\xE3o do v\xEDdeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-md-3 col-sm-6 mt-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card col text-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-header",
-    style: estiloCard
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\xEDtulo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "card-body"
-  }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "card-text"
-  }, "Descri\xE7\xE3o do v\xEDdeo")))));
-};
+
+
+var Content =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Content, _Component);
+
+  function Content() {
+    var _this;
+
+    _classCallCheck(this, Content);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Content).call(this));
+    _this.state = {
+      videos: []
+    };
+    return _this;
+  }
+
+  _createClass(Content, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/videos').then(function (response) {
+        _this2.setState({
+          videos: response.data
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var videos = this.state.videos;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, videos.map(function (video) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-md-3 col-sm-6 mt-3"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card col text-center",
+          key: video.id
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-header",
+          style: estiloCard
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, video.nome)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body"
+        }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "card-text"
+        }, video.descricao)));
+      })));
+    }
+  }]);
+
+  return Content;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Content);
 var estiloCard = {
@@ -66150,72 +66132,72 @@ __webpack_require__.r(__webpack_exports__);
 
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
-    class: "container py-5 fixed-bottom"
+    className: "container py-5 fixed-bottom"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "row"
+    className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-12 col-md"
+    className: "col-12 col-md"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "row"
+    className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-sm"
+    className: "col-sm"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _imgs_pet_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     width: "80",
     height: "100"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-sm"
+    className: "col-sm"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _imgs_rural_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     width: "70",
     height: "100"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    class: "d-block mb-3 text-muted"
+    className: "d-block mb-3 text-muted"
   }, "Desenvolvido por PET-Sistemas de Informa\xE7\xE3o UFRRJ \xA9 2019")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-6 col-md"
+    className: "col-6 col-md"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "ConectaIdoso"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    class: "list-unstyled text-small"
+    className: "list-unstyled text-small"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "text-muted",
+    className: "text-muted",
     href: "#"
   }, "Sobre o PET")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "text-muted",
+    className: "text-muted",
     href: "#"
   }, "Sobre a plataforma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "text-muted",
+    className: "text-muted",
     href: "#"
   }, "Como utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "text-muted",
+    className: "text-muted",
     href: "#"
   }, "Mais Tutoriais")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-6 col-md"
+    className: "col-6 col-md"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Fale Conosco"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    class: "list-unstyled text-small"
+    className: "list-unstyled text-small"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-sm text-muted"
+    className: "col-sm text-muted"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "http://r1.ufrrj.br/petsi/",
     style: estilo
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-globe"
   }), "Site"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-sm text-muted"
+    className: "col-sm text-muted"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.facebook.com/PetSIUFRRJ/",
     style: estilo
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-facebook-square"
   }), "Facebook"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-sm text-muted"
+    className: "col-sm text-muted"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.youtube.com/channel/UC9DegqNCRluHKPt-Hy9-_ew",
     style: estilo
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-youtube"
   }), "Youtube"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-6 col-md"
+    className: "col-6 col-md"
   }, "       "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-6 col-md"
+    className: "col-6 col-md"
   }, "       ")));
 };
 
@@ -66330,8 +66312,8 @@ module.exports = "/images/rural.png?b844ec415e82f71286ed0b80172d8629";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
