@@ -13,11 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('projects', 'ProjectController@index');
-Route::post('projects', 'ProjectController@store');
-Route::get('projects/{id}', 'ProjectController@show');
-
-
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
+Route::get('videos', 'VideosController@index');
+Route::post('videos', 'VideosController@store');
+Route::get('videos/{id}', 'VideosController@show');
+Route::put('videos/{id}', 'VideosController@update');
+Route::delete('videos/{id}', 'VideosController@destroy');
