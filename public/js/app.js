@@ -84337,13 +84337,9 @@ function (_Component) {
         className: "row"
       }, videos.map(function (video) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-<<<<<<< HEAD
-          to: "/video/".concat(video.id)
-=======
-          to: "/video",
+          to: "/video/".concat(video.id),
           style: estiloCard,
           className: "col-md-3 col-sm-6 "
->>>>>>> 10cf0e3041dd2bf299ac111917cac8b1fc842bd7
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           height: "400"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -84707,6 +84703,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
 /* harmony import */ var _Video__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Video */ "./resources/js/components/Video.js");
 /* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Login */ "./resources/js/components/Login.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
@@ -84714,9 +84727,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var VideoSingle = function VideoSingle() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", param.id, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
-};
+
+var VideoSingle =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(VideoSingle, _Component);
+
+  function VideoSingle() {
+    var _this;
+
+    _classCallCheck(this, VideoSingle);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(VideoSingle).call(this));
+    _this.state = {
+      videos: []
+    };
+    return _this;
+  } // componentDidMount () {
+  //   axios.get('/api/videos').then(response => {
+  //     this.setState({
+  //       videos: response.data
+  //     })
+  //   })
+  // }
+
+
+  _createClass(VideoSingle, [{
+    key: "render",
+    value: function render() {
+      // const { videos } = this.state;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", param.id, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    }
+  }]);
+
+  return VideoSingle;
+}(Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (VideoSingle);
 
@@ -84762,8 +84807,8 @@ module.exports = "/images/rural.png?b844ec415e82f71286ed0b80172d8629";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
