@@ -84761,7 +84761,7 @@ function (_Component) {
   }]);
 
   return VideoSingle;
-}(Component);
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (VideoSingle);
 
