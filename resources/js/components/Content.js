@@ -1,6 +1,7 @@
     import React, {Component} from 'react'
     import { Link } from 'react-router-dom'
     import axios from 'axios'
+    import ReactPlayer from 'react-player'
 
     class Content extends Component {
         constructor () {
@@ -25,11 +26,13 @@
                     <div className="row">
 
                         {videos.map(video => (
-                            <Link to='/video'>
-                                <div className="col-md-3 col-sm-6 mt-3">
-                                    <div className="card col text-center" key={video.id}>
-                                        <div className="card-header" style={estiloCard}><h4>{video.nome}</h4></div>
-                                        <div className="card-body">Vídeo</div> 
+                            <Link to='/video' style={estiloCard} className="col-md-3 col-sm-6 " >
+                                <div height='400'> 
+                                    <div className="card col text-center mt-3 mb-1" key={video.id}>
+                                        <div className="card-header" style={estiloCard}><h6>{video.nome}</h6></div>
+                                        <div className="card-body">
+                                          <ReactPlayer url={video.url} width='100%' height='100%' />
+                                        </div> 
                                         <p className="card-text">{video.descricao}</p>
                                     </div>
                                 </div>

@@ -5,7 +5,7 @@ import 'font-awesome/css/font-awesome.min.css'
 
     const Footer = () => (
         
-       <footer className="container py-5 fixed-bottom">
+       <footer className="container py-5 ">
        <hr></hr>
         <div className="row">
             <div className="col-12 col-md">
