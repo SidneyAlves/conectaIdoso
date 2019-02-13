@@ -4,13 +4,17 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import PagInicial from './PagInicial'
+import VideoSingle from './VideoSingle'
 
 class App extends Component {
     render () {
     return (
         <BrowserRouter>
             <div>
-                <PagInicial />
+                <Switch>
+                    <Route exact path='/' component={PagInicial} />
+                    <Route path='/video' component={VideoSingle} />
+                </Switch>
             </div>
         </BrowserRouter>
     
