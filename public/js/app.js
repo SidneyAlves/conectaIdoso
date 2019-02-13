@@ -80513,7 +80513,9 @@ function (_Component) {
           style: estiloCard
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, video.nome)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "card-body"
-        }, "V\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+          src: video.url
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "card-text"
         }, video.descricao)));
       })));
@@ -80787,8 +80789,8 @@ module.exports = "/images/rural.png?b844ec415e82f71286ed0b80172d8629";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
