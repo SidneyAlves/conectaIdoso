@@ -13,8 +13,17 @@ use Illuminate\Http\Request;
 |
 */
 
+
+//Videos
 Route::get('videos', 'VideosController@index');
 Route::post('videos', 'VideosController@store');
 Route::get('videos/{id}', 'VideosController@show');
 Route::put('videos/{id}', 'VideosController@update');
 Route::delete('videos/{id}', 'VideosController@destroy');
+
+//Usuario
+Route::get('usuarios', 'UsuariosController@index');
+Route::post('usuarios', 'UsuariosController@store');
+Route::get('usuarios/{id}', 'UsuariosController@show');
+Route::put('usuarios/{id}', 'UsuariosController@update');
+Route::delete('usuarios/{id}', 'UsuariosController@destroy');

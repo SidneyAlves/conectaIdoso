@@ -15,4 +15,8 @@
 //     return view('welcome');
 // });
 
-Route::view('/{path?}', 'app');
+Route::view('/', 'app');
+Route::view('/admin', 'admin');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

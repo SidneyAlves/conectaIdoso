@@ -27,7 +27,7 @@ class VideosController extends Controller
           'palavras-chave' => $validatedData['palavras-chave'],
         ]);
 
-        return response()->json('Project created!');
+        return response()->json('Video Adicionado ao banco de dados!');
     }
 
     public function show($id){
@@ -69,6 +69,8 @@ class VideosController extends Controller
         }
 
         $video->delete();
+
+        return response()->json('Video deletado do banco de dados!');
     }
 
 
