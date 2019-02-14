@@ -1,18 +1,36 @@
-    import React from 'react'
-    import { Link } from 'react-router-dom'
+import React, {Component} from 'react'
+import { Link } from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
+import Video from './Video'
+import Login from './Login'
 
-    const Header = () => (
-      <nav className='navbar navbar-expand-md navbar-light navbar-laravel' style={estiloHeader}>
-        <div className='container'>
-          <Link className='navbar-brand' to='/'>ConectaIdoso</Link>
+class VideoSingle extends Component {
+    constructor () {
+      super()
+      this.state = {
+        videos: []
+      }
+    }
+
+    // componentDidMount () {
+    //   axios.get('/api/videos').then(response => {
+    //     this.setState({
+    //       videos: response.data
+    //     })
+    //   })
+    // }
+
+    render () {
+        // const { videos } = this.state;
+        return(
+        <div>
+            <Header /> <br></br>
+            <p> {param.id} </p>
+            <Footer />
         </div>
-      </nav>
-    )
+        )
+    }
+}
 
-    export default Header
-
-
-    const estiloHeader = {
-      backgroundColor: 'green',  
-      color:'white',      
-    };
+export default VideoSingle

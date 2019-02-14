@@ -26,7 +26,7 @@
                     <div className="row">
 
                         {videos.map(video => (
-                            <Link to='/video' style={estiloCard} className="col-md-3 col-sm-6 " >
+                            <Link to={`/video/${video.id}`} style={estiloCard} className="col-md-3 col-sm-6 " >
                                 <div height='400'> 
                                     <div className="card col text-center mt-3 mb-1" key={video.id}>
                                         <div className="card-header" style={estiloCard}><h6>{video.nome}</h6></div>

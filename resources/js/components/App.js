@@ -13,7 +13,7 @@ class App extends Component {
             <div>
                 <Switch>
                     <Route exact path='/' component={PagInicial} />
-                    <Route path='/video' component={VideoSingle} />
+                    <Route path='/video/:id' component={VideoSingle} />
                 </Switch>
             </div>
         </BrowserRouter>

@@ -8,7 +8,7 @@
     const PagInicial = () => (
      <div>
          <Header /> <br></br>
-         <Content />
+            <Content />
          <Footer />
      </div>
     )
