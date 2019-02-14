@@ -23,6 +23,7 @@
             const { videos } = this.state;
             return(
                 <div className="container">
+                    <p className="card-text">Dica: clique no cartão desejado para visualizar o vídeo em tela cheia!</p>
                     <div className="row">
 
                         {videos.map(video => (
