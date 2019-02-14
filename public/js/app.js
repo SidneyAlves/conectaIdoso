@@ -84747,50 +84747,50 @@ function (_Component) {
       }, video.descricao)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-4  h-100"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        class: "list-unstyled"
+        className: "list-unstyled"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        class: "media border",
+        className: "media border",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        class: "mr-3",
+        className: "mr-3",
         src: _imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
         alt: "Generic placeholder image",
         width: "70",
         height: "70"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "media-body "
+        className: "media-body "
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        class: "mt-0 mb-1 "
+        className: "mt-0 mb-1 "
       }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "justify-content-center"
       }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        class: "media my-4 border",
+        className: "media my-4 border",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        class: "mr-3",
+        className: "mr-3",
         src: _imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
         alt: "Generic placeholder image",
         width: "70",
         height: "70"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "media-body "
+        className: "media-body "
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        class: "mt-0 mb-1"
+        className: "mt-0 mb-1"
       }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "justify-content-center"
       }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        class: "media border",
+        className: "media border",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        class: "mr-3",
+        className: "mr-3",
         src: _imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
         alt: "Generic placeholder image",
         width: "70",
         height: "70"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "media-body"
+        className: "media-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        class: "mt-0 mb-1"
+        className: "mt-0 mb-1"
       }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "justify-content-center"
       }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
@@ -84859,8 +84859,8 @@ module.exports = "/images/teste.jpg?200cb8034366f5f15071fba0a60a82aa";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
