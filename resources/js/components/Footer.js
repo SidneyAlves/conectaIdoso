@@ -4,18 +4,19 @@ import logorural from './imgs/rural.png'
 import 'font-awesome/css/font-awesome.min.css'
 
     const Footer = () => (
-        
-       <footer className="container py-5 ">
+       
+       <footer className="text-center py-5">
        <hr></hr>
+       <div className="container">
         <div className="row">
-            <div className="col-12 col-md">
-                <div className="row">
-                    <div className="col-md"><img src={logopet} width="85" height="100"></img></div>
-                    <div className="col-md"><img src={logorural} width="75" height="100"></img></div>
+            <div className="col-md-2 col-sm-4 offset-md-3">
+                <div className="row w-100 ">
+                    <div className="col-md col-sm"><img src={logopet} className="w-100 h-100"></img></div>
+                    <div className="col-md col-sm"><img src={logorural}  className="w-100 h-100"></img></div>
                 </div>
-                <small className="d-block mb-3 text-muted">Desenvolvido por PET-Sistemas de Informação UFRRJ &copy; 2019</small> 
+                <small className=" mb-3 text-muted" >Desenvolvido por PET-Sistemas de Informação UFRRJ &copy; 2019</small> 
             </div>
-            <div className="col-6 col-md">
+            <div className="col-md-2">
             <h5>ConectaIdoso</h5>
             <ul className="list-unstyled text-small">
                 <li><a className="text-muted" href="#">Sobre o PET</a></li>
@@ -24,7 +25,7 @@ import 'font-awesome/css/font-awesome.min.css'
                 <li><a className="text-muted" href="#">Mais Tutoriais</a></li>
             </ul>
             </div>
-            <div className="col-6 col-md">
+            <div className="col-md-2">
                 <h5>Fale Conosco</h5>
                 <ul className="list-unstyled text-small">
                     <div className="col-sm text-muted"><li><a href="http://r1.ufrrj.br/petsi/" style={estilo}><i className="fa fa-globe"></i>Site</a></li></div>
@@ -35,6 +36,7 @@ import 'font-awesome/css/font-awesome.min.css'
             <div className="col-6 col-md">       </div>
             <div className="col-6 col-md">       </div>
             
+        </div>
         </div>
         </footer>
     )

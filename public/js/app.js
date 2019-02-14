@@ -84201,8 +84201,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-/* harmony import */ var _PagInicial__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PagInicial */ "./resources/js/components/PagInicial.js");
+/* harmony import */ var _ConectaIdoso__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ConectaIdoso */ "./resources/js/components/ConectaIdoso.js");
 /* harmony import */ var _VideoSingle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VideoSingle */ "./resources/js/components/VideoSingle.js");
+/* harmony import */ var _PagInicial__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PagInicial */ "./resources/js/components/PagInicial.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -84228,6 +84229,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var App =
 /*#__PURE__*/
 function (_Component) {
@@ -84245,7 +84247,10 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
         path: "/",
-        component: _PagInicial__WEBPACK_IMPORTED_MODULE_3__["default"]
+        component: _ConectaIdoso__WEBPACK_IMPORTED_MODULE_3__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/PagInicial",
+        component: _PagInicial__WEBPACK_IMPORTED_MODULE_5__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/video/:id",
         component: _VideoSingle__WEBPACK_IMPORTED_MODULE_4__["default"]
@@ -84257,6 +84262,53 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('app'));
+
+/***/ }),
+
+/***/ "./resources/js/components/ConectaIdoso.js":
+/*!*************************************************!*\
+  !*** ./resources/js/components/ConectaIdoso.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
+/* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Login */ "./resources/js/components/Login.js");
+/* harmony import */ var _imgs_idosos_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./imgs/idosos.jpg */ "./resources/js/components/imgs/idosos.jpg");
+/* harmony import */ var _imgs_idosos_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_imgs_idosos_jpg__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+var ConectaIdoso = function ConectaIdoso() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " row p-0 w-100 h-100"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-7"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _imgs_idosos_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    className: "h-100 w-100 pt-5 pl-3"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-4 w-100 h-100"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: " mt-4",
+    align: "center"
+  }, "O que \xE9 o ConectaIdoso?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    align: "justify",
+    className: "w-100 h-100 mt-3"
+  }, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ConectaIdoso);
 
 /***/ }),
 
@@ -84333,30 +84385,34 @@ function (_Component) {
       var videos = this.state.videos;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "card-text"
-      }, "Dica: clique no cart\xE3o desejado para visualizar o v\xEDdeo em tela cheia!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "V\xEDdeos"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row offset-md-1"
       }, videos.map(function (video) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
           to: "/video/".concat(video.id),
-          className: "col-md-3 col-sm-6 "
+          style: estiloCard,
+          className: "col-md-3 col-sm-6 p-0 m-3"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          height: "400"
+          height: "400",
+          className: "p-0",
+          style: estiloCard
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card col text-center mt-3 mb-1",
+          className: "card bg-light col text-center mt-3 mb-1 p-0 border-0",
+          style: estiloCard,
           key: video.id
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card-header",
+          className: "card-body mb-1",
           style: estiloCard
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, video.nome)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "card-body"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_player__WEBPACK_IMPORTED_MODULE_3___default.a, {
           url: video.url,
+          className: "w-100 mb-0 pb-0",
           width: "100%",
           height: "100%"
-        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          className: "card-text",
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+          class: "card-title mt-1",
+          style: estiloCard
+        }, video.nome), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "text-muted",
           style: estiloCard
         }, video.descricao))));
       })));
@@ -84368,8 +84424,7 @@ function (_Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (Content);
 var estiloCard = {
-  color: 'black',
-  backgroundColor: 'white'
+  color: 'black'
 };
 
 /***/ }),
@@ -84398,29 +84453,29 @@ __webpack_require__.r(__webpack_exports__);
 
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
-    className: "container py-5 "
+    className: "text-center py-5"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-md"
+    className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md"
+    className: "col-md-2 col-sm-4 offset-md-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row w-100 "
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md col-sm"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _imgs_pet_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    width: "85",
-    height: "100"
+    className: "w-100 h-100"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md"
+    className: "col-md col-sm"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _imgs_rural_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    width: "75",
-    height: "100"
+    className: "w-100 h-100"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    className: "d-block mb-3 text-muted"
+    className: " mb-3 text-muted"
   }, "Desenvolvido por PET-Sistemas de Informa\xE7\xE3o UFRRJ \xA9 2019")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-6 col-md"
+    className: "col-md-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "ConectaIdoso"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-unstyled text-small"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -84436,7 +84491,7 @@ var Footer = function Footer() {
     className: "text-muted",
     href: "#"
   }, "Mais Tutoriais")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-6 col-md"
+    className: "col-md-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Fale Conosco"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-unstyled text-small"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -84464,7 +84519,7 @@ var Footer = function Footer() {
     className: "col-6 col-md"
   }, "       "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6 col-md"
-  }, "       ")));
+  }, "       "))));
 };
 
 var estilo = {
@@ -84518,17 +84573,17 @@ var Header = function Header() {
     class: "navbar-nav mr-auto mt-2 mt-lg-0 ml-2 "
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     class: "nav-item active"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "nav-link",
-    href: "#",
-    style: estiloHeader
-  }, "V\xEDdeos ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "nav-link",
+    style: estiloHeader,
+    to: "/PagInicial"
+  }, "V\xEDdeos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     class: "nav-item"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "nav-link",
-    href: "#",
-    style: estiloHeader
-  }, "Como utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "nav-link",
+    style: estiloHeader,
+    to: "/"
+  }, "Como Utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     class: "nav-item"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     class: "nav-link",
@@ -84727,12 +84782,12 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-8 "
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card  h-100",
+        className: "card bg-light h-100",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-header",
+        className: "card-header bg-light",
         style: estiloCard
-      }, video.nome), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, video.nome)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_player__WEBPACK_IMPORTED_MODULE_6___default.a, {
         url: video.url,
@@ -84740,7 +84795,7 @@ function (_Component) {
         height: "100%",
         className: "h-100"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-footer",
+        className: "card-footer bg-light",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "card-text"
@@ -84749,7 +84804,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-unstyled"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "media border",
+        className: "media border bg-light",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "mr-3",
@@ -84802,9 +84857,19 @@ function (_Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (VideoSingle);
 var estiloCard = {
-  color: 'black',
-  backgroundColor: 'white'
+  color: 'black'
 };
+
+/***/ }),
+
+/***/ "./resources/js/components/imgs/idosos.jpg":
+/*!*************************************************!*\
+  !*** ./resources/js/components/imgs/idosos.jpg ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/idosos.jpg?c9ebef8e2797f330080b7696b1188e41";
 
 /***/ }),
 
@@ -84859,8 +84924,8 @@ module.exports = "/images/teste.jpg?200cb8034366f5f15071fba0a60a82aa";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

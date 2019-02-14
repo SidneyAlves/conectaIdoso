@@ -11,10 +11,10 @@ import React from 'react'
           <div class="collapse navbar-collapse" id="hamburguer">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-2 ">
               <li class="nav-item active">
-                <a class="nav-link" href="#"  style={estiloHeader}>Vídeos </a>
+                <Link className='nav-link' style={estiloHeader} to='/PagInicial'>Vídeos</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style={estiloHeader}>Como utilizar</a>
+                <Link className='nav-link' style={estiloHeader} to='/'>Como Utilizar</Link>                
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" style={estiloHeader}>Sobre nós</a>

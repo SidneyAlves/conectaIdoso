@@ -35,19 +35,19 @@ class VideoSingle extends Component {
         <div className='container mt-3 mb-2 p-0'>
         <div className='row my-2  h-100'>
             <div className='col-md-8 '>
-              <div className='card  h-100' style={estiloCard}>
-                  <div className='card-header' style={estiloCard}>{video.nome}</div>
+              <div className='card bg-light h-100' style={estiloCard}>
+                  <div className='card-header bg-light' style={estiloCard}><h4>{video.nome}</h4></div>
                   <div className='card-body'>
                       <ReactPlayer url={video.url} width='100%' height='100%' className='h-100'/>                    
                   </div>
-                  <div className='card-footer'style={estiloCard}>
+                  <div className='card-footer bg-light'style={estiloCard}>
                     <p className="card-text">{video.descricao}</p>
                   </div>
               </div>
             </div>
             <div className='col-md-4  h-100'>
             <ul className="list-unstyled">
-              <li className="media border" style={estiloCard}>
+              <li className="media border bg-light" style={estiloCard}>
                 <img className="mr-3" src={teste} alt="Generic placeholder image" width='70' height='70' />
                 <div className="media-body ">
                   <h5 className="mt-0 mb-1 ">Título</h5>
@@ -88,5 +88,4 @@ export default VideoSingle
 
 const estiloCard = {
   color: 'black',
-  backgroundColor: 'white',
 };

@@ -23,23 +23,23 @@
             const { videos } = this.state;
             return(
                 <div className="container">
-                    <p className="card-text">Dica: clique no cartão desejado para visualizar o vídeo em tela cheia!</p>
-                    <div className="row">
+                    <h3>Vídeos</h3>
+                    <hr></hr>
 
+                    <div className="row offset-md-1">
                         {videos.map(video => (
-                            <Link to={`/video/${video.id}`}  className="col-md-3 col-sm-6 " >
-                                <div height='400'> 
-                                    <div className="card col text-center mt-3 mb-1" key={video.id}>
-                                        <div className="card-header" style={estiloCard}><h6>{video.nome}</h6></div>
-                                        <div className="card-body">
-                                          <ReactPlayer url={video.url} width='100%' height='100%' />
+                            <Link to={`/video/${video.id}`} style={estiloCard} className="col-md-3 col-sm-6 p-0 m-3" >
+                                <div height='400' className='p-0' style={estiloCard}> 
+                                    <div className="card bg-light col text-center mt-3 mb-1 p-0 border-0" style={estiloCard} key={video.id}>                                        
+                                        <div className="card-body mb-1" style={estiloCard}>
+                                          <ReactPlayer url={video.url} className='w-100 mb-0 pb-0' width='100%' height='100%' />
                                         </div> 
-                                        <p className="card-text" style={estiloCard}>{video.descricao}</p>
+                                        <h5 class="card-title mt-1" style={estiloCard}>{video.nome}</h5>
+                                        <p className="text-muted" style={estiloCard}>{video.descricao}</p>
                                     </div>
                                 </div>
                             </Link>
                         ))}
-
                     </div>
                 </div>
             )
@@ -50,5 +50,4 @@
 
     const estiloCard = {
         color: 'black',
-        backgroundColor: 'white',
     };
