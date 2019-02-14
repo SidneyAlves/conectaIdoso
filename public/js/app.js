@@ -84338,7 +84338,6 @@ function (_Component) {
       }, videos.map(function (video) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
           to: "/video",
-          style: estiloCard,
           className: "col-md-3 col-sm-6 "
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           height: "400"
