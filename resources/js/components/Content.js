@@ -26,14 +26,14 @@
                     <div className="row">
 
                         {videos.map(video => (
-                            <Link to={`/video/${video.id}`} style={estiloCard} className="col-md-3 col-sm-6 " >
+                            <Link to={`/video/${video.id}`}  className="col-md-3 col-sm-6 " >
                                 <div height='400'> 
                                     <div className="card col text-center mt-3 mb-1" key={video.id}>
                                         <div className="card-header" style={estiloCard}><h6>{video.nome}</h6></div>
                                         <div className="card-body">
                                           <ReactPlayer url={video.url} width='100%' height='100%' />
                                         </div> 
-                                        <p className="card-text">{video.descricao}</p>
+                                        <p className="card-text" style={estiloCard}>{video.descricao}</p>
                                     </div>
                                 </div>
                             </Link>

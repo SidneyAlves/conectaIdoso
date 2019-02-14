@@ -10,8 +10,8 @@ import 'font-awesome/css/font-awesome.min.css'
         <div className="row">
             <div className="col-12 col-md">
                 <div className="row">
-                    <div className="col-sm"><img src={logopet} width="80" height="100"></img></div>
-                    <div className="col-sm"><img src={logorural} width="70" height="100"></img></div>
+                    <div className="col-md"><img src={logopet} width="85" height="100"></img></div>
+                    <div className="col-md"><img src={logorural} width="75" height="100"></img></div>
                 </div>
                 <small className="d-block mb-3 text-muted">Desenvolvido por PET-Sistemas de Informação UFRRJ &copy; 2019</small> 
             </div>

@@ -84337,12 +84337,7 @@ function (_Component) {
         className: "row"
       }, videos.map(function (video) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-<<<<<<< HEAD
-          to: "/video",
-=======
           to: "/video/".concat(video.id),
-          style: estiloCard,
->>>>>>> baa8ec95b5831f3de99b458886857e008830602e
           className: "col-md-3 col-sm-6 "
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           height: "400"
@@ -84359,7 +84354,8 @@ function (_Component) {
           width: "100%",
           height: "100%"
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          className: "card-text"
+          className: "card-text",
+          style: estiloCard
         }, video.descricao))));
       })));
     }
@@ -84408,16 +84404,16 @@ var Footer = function Footer() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm"
+    className: "col-md"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _imgs_pet_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    width: "80",
+    width: "85",
     height: "100"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm"
+    className: "col-md"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _imgs_rural_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    width: "70",
+    width: "75",
     height: "100"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "d-block mb-3 text-muted"
@@ -84495,12 +84491,58 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "navbar navbar-expand-md navbar-light navbar-laravel",
     style: estiloHeader
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "navbar-brand",
+    style: estiloHeader,
     to: "/"
-  }, "ConectaIdoso")));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "ConectaIdoso")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    class: "navbar-toggler",
+    type: "button",
+    "data-toggle": "collapse",
+    "data-target": "#hamburguer",
+    "aria-controls": "navbarTogglerDemo02",
+    "aria-expanded": "false",
+    "aria-label": "Toggle navigation",
+    style: estiloHeader
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    class: "navbar-toggler-icon",
+    style: estiloHeader
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "collapse navbar-collapse",
+    id: "hamburguer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    class: "navbar-nav mr-auto mt-2 mt-lg-0 ml-2 "
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    class: "nav-item active"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "nav-link",
+    href: "#",
+    style: estiloHeader
+  }, "V\xEDdeos ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    class: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "nav-link",
+    href: "#",
+    style: estiloHeader
+  }, "Como utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    class: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    class: "nav-link",
+    href: "#",
+    style: estiloHeader
+  }, "Sobre n\xF3s"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    class: "form-inline my-2 my-lg-0"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    class: "form-control mr-sm-2",
+    type: "search",
+    placeholder: "Pesquisar"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    class: "btn btn-outline-success my-2 my-sm-0",
+    type: "submit"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-search",
+    "aria-hidden": "true"
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -84811,8 +84853,8 @@ module.exports = "/images/rural.png?b844ec415e82f71286ed0b80172d8629";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
