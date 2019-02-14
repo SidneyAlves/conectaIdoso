@@ -84493,6 +84493,8 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "navbar navbar-expand-md navbar-light navbar-laravel",
     style: estiloHeader
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "navbar-brand",
     style: estiloHeader,
@@ -84544,7 +84546,7 @@ var Header = function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-search",
     "aria-hidden": "true"
-  })))));
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -84655,6 +84657,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-player */ "./node_modules/react-player/lib/ReactPlayer.js");
 /* harmony import */ var react_player__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_player__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./imgs/teste.jpg */ "./resources/js/components/imgs/teste.jpg");
+/* harmony import */ var _imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -84672,6 +84676,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -84716,24 +84721,79 @@ function (_Component) {
     value: function render() {
       var video = this.state.video;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container py-4"
+        className: "container mt-3 mb-2 p-0"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row justify-content-center"
+        className: "row my-2  h-100"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-8"
+        className: "col-md-8 "
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card"
+        className: "card  h-100",
+        style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-header"
+        className: "card-header",
+        style: estiloCard
       }, video.nome), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_player__WEBPACK_IMPORTED_MODULE_6___default.a, {
         url: video.url,
         width: "100%",
-        height: "100%"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        height: "100%",
+        className: "h-100"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-footer",
+        style: estiloCard
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "card-text"
-      }, video.descricao)))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, video.descricao)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-4  h-100"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        class: "list-unstyled"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        class: "media border",
+        style: estiloCard
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        class: "mr-3",
+        src: _imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+        alt: "Generic placeholder image",
+        width: "70",
+        height: "70"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "media-body "
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        class: "mt-0 mb-1 "
+      }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "justify-content-center"
+      }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        class: "media my-4 border",
+        style: estiloCard
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        class: "mr-3",
+        src: _imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+        alt: "Generic placeholder image",
+        width: "70",
+        height: "70"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "media-body "
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        class: "mt-0 mb-1"
+      }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "justify-content-center"
+      }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        class: "media border",
+        style: estiloCard
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        class: "mr-3",
+        src: _imgs_teste_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+        alt: "Generic placeholder image",
+        width: "70",
+        height: "70"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "media-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        class: "mt-0 mb-1"
+      }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "justify-content-center"
+      }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
@@ -84741,6 +84801,10 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (VideoSingle);
+var estiloCard = {
+  color: 'black',
+  backgroundColor: 'white'
+};
 
 /***/ }),
 
@@ -84763,6 +84827,17 @@ module.exports = "/images/pet.png?a5895f03bc0f3c33b37d160f5b1d12a8";
 /***/ (function(module, exports) {
 
 module.exports = "/images/rural.png?b844ec415e82f71286ed0b80172d8629";
+
+/***/ }),
+
+/***/ "./resources/js/components/imgs/teste.jpg":
+/*!************************************************!*\
+  !*** ./resources/js/components/imgs/teste.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/teste.jpg?200cb8034366f5f15071fba0a60a82aa";
 
 /***/ }),
 

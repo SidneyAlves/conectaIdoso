@@ -2,7 +2,8 @@ import React from 'react'
     import { Link } from 'react-router-dom'
 
     const Header = () => (
-      <nav className='navbar navbar-expand-md navbar-light navbar-laravel' style={estiloHeader}>        
+      <nav className='navbar navbar-expand-md navbar-light navbar-laravel' style={estiloHeader}> 
+          <div className='container'>      
           <Link className='navbar-brand' style={estiloHeader} to='/'><h3>ConectaIdoso</h3></Link>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburguer" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"  style={estiloHeader}>
             <span class="navbar-toggler-icon" style={estiloHeader}></span>
@@ -24,6 +25,7 @@ import React from 'react'
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
             </form>
           </div>
+          </div> 
       </nav>
     )
 
