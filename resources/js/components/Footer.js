@@ -2,6 +2,7 @@ import React from 'react'
 import logopet from './imgs/pet.png'
 import logorural from './imgs/rural.png'
 import 'font-awesome/css/font-awesome.min.css'
+import { Link } from 'react-router-dom'
 
     const Footer = () => (
        
@@ -19,10 +20,11 @@ import 'font-awesome/css/font-awesome.min.css'
             <div className="col-md-2">
             <h5>ConectaIdoso</h5>
             <ul className="list-unstyled text-small">
-                <li><a className="text-muted" href="#">Sobre o PET</a></li>
-                <li><a className="text-muted" href="#">Sobre a plataforma</a></li>
-                <li><a className="text-muted" href="#">Como utilizar</a></li>
-                <li><a className="text-muted" href="#">Mais Tutoriais</a></li>
+                <li> <Link className='text-muted' to='/SobreNos'>Sobre o PET</Link> </li>
+                <li><Link className='text-muted' to='/'>Sobre a Plataforma</Link></li>
+                <li><Link className='text-muted' to='/'>Como utilizar</Link></li>                
+                <li><Link className='text-muted' to='/PagInicial'>Vídeos</Link></li>  
+                              
             </ul>
             </div>
             <div className="col-md-2">

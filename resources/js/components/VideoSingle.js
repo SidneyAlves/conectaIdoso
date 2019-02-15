@@ -70,7 +70,9 @@ class VideoSingle extends Component {
                 <div className="media-body">
                   <h5 className="mt-0 mb-1">Título</h5>
                   <p className='justify-content-center'>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    O ConectaIdoso é uma plataforma voltada para o ensino de tecnologias atuais para o público da terceira idade. Nosso objetivo é permitir que o aprendizado seja realizado de forma fácil e prática, de forma a aumentar a inclusão dos idosos em um mundo que se mostra cada vez mais conectado.
+  Com tutoriais intuitivos e simples, iremos mostrar como funcionam e como utilizar aplicativos como o Youtube, Whatsapp, Gmail, Facebook, dentre outras ferramentas úteis presentes nos telefones celulares, e que poderão contribuir para a melhora da qualidade de vida de seus usuários. 
+  Esses tutoriais serão gravados pelos próprios alunos do PET-SI, da UFRRJ, de forma que os vídeos contenham um material didático atualizado e objetivo, de forma a trazer uma experiência produtiva e recompensadora.
                   </p>                  
                 </div>
               </li>

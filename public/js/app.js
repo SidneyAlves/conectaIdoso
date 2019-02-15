@@ -84204,6 +84204,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ConectaIdoso__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ConectaIdoso */ "./resources/js/components/ConectaIdoso.js");
 /* harmony import */ var _VideoSingle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VideoSingle */ "./resources/js/components/VideoSingle.js");
 /* harmony import */ var _PagInicial__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PagInicial */ "./resources/js/components/PagInicial.js");
+/* harmony import */ var _SobreNos__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SobreNos */ "./resources/js/components/SobreNos.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -84223,6 +84224,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 // resources/assets/js/components/App.js
+
 
 
 
@@ -84254,6 +84256,9 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/video/:id",
         component: _VideoSingle__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/SobreNos",
+        component: _SobreNos__WEBPACK_IMPORTED_MODULE_6__["default"]
       }))));
     }
   }]);
@@ -84446,6 +84451,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _imgs_rural_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_imgs_rural_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var font_awesome_css_font_awesome_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! font-awesome/css/font-awesome.min.css */ "./node_modules/font-awesome/css/font-awesome.min.css");
 /* harmony import */ var font_awesome_css_font_awesome_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(font_awesome_css_font_awesome_min_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
 
 
 
@@ -84478,19 +84485,19 @@ var Footer = function Footer() {
     className: "col-md-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "ConectaIdoso"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-unstyled text-small"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
     className: "text-muted",
-    href: "#"
-  }, "Sobre o PET")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    to: "/SobreNos"
+  }, "Sobre o PET"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
     className: "text-muted",
-    href: "#"
-  }, "Sobre a plataforma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    to: "/"
+  }, "Sobre a Plataforma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
     className: "text-muted",
-    href: "#"
-  }, "Como utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    to: "/"
+  }, "Como utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
     className: "text-muted",
-    href: "#"
-  }, "Mais Tutoriais")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    to: "/PagInicial"
+  }, "V\xEDdeos")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Fale Conosco"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-unstyled text-small"
@@ -84585,11 +84592,11 @@ var Header = function Header() {
     to: "/"
   }, "Como Utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     class: "nav-item"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    class: "nav-link",
-    href: "#",
-    style: estiloHeader
-  }, "Sobre n\xF3s"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "nav-link",
+    style: estiloHeader,
+    to: "/SobreNos"
+  }, "Sobre o PET"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     class: "form-inline my-2 my-lg-0"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     class: "form-control mr-sm-2",
@@ -84690,6 +84697,53 @@ var PagInicial = function PagInicial() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (PagInicial);
+
+/***/ }),
+
+/***/ "./resources/js/components/SobreNos.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/SobreNos.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
+/* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Login */ "./resources/js/components/Login.js");
+/* harmony import */ var _imgs_turma2018_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./imgs/turma2018.jpg */ "./resources/js/components/imgs/turma2018.jpg");
+/* harmony import */ var _imgs_turma2018_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_imgs_turma2018_jpg__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+var SobreNos = function SobreNos() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " row p-0 w-100 h-100"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-7"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _imgs_turma2018_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    className: "h-100 w-100 pt-3 pl-2"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-4 w-100 h-100 ml-3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: " mt-4",
+    align: "center"
+  }, "Sobre o PET"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    align: "justify",
+    className: "w-100 h-100 mt-3"
+  }, "O Programa de Educa\xE7\xE3o Tutorial (PET) \xE9 um programa de comprovada excel\xEAncia, o qual compromete-se fundamentalmente em aprimorar os cursos de gradua\xE7\xE3o. Trabalha com quatro vertentes principais que s\xE3o: Ensino, Cultura, Pesquisa e Extens\xE3o e forma cidad\xE3os que aprendem durante tr\xEAs anos a trabalhar em equipe, a irradiar para os demais colegas o esp\xEDrito de lideran\xE7a e o compromisso com a gera\xE7\xE3o de conhecimento para a solu\xE7\xE3o dos mais diversos problemas. \xC9 o \xFAnico programa institucional voltado para gradua\xE7\xE3o que trabalha no formato de grupo interdisciplinar, ancorado em alunos e professores e que recebe avalia\xE7\xE3o institucional e n\xE3o individual. Cada grupo PET conta com um conjunto de alunos bolsistas, um professor-tutor, v\xE1rios professores colaboradores e, muitas vezes, conta ainda com alunos volunt\xE1rios que ajudam nas atividades do grupo.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SobreNos);
 
 /***/ }),
 
@@ -84848,7 +84902,7 @@ function (_Component) {
         className: "mt-0 mb-1"
       }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "justify-content-center"
-      }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, "O ConectaIdoso \xE9 uma plataforma voltada para o ensino de tecnologias atuais para o p\xFAblico da terceira idade. Nosso objetivo \xE9 permitir que o aprendizado seja realizado de forma f\xE1cil e pr\xE1tica, de forma a aumentar a inclus\xE3o dos idosos em um mundo que se mostra cada vez mais conectado. Com tutoriais intuitivos e simples, iremos mostrar como funcionam e como utilizar aplicativos como o Youtube, Whatsapp, Gmail, Facebook, dentre outras ferramentas \xFAteis presentes nos telefones celulares, e que poder\xE3o contribuir para a melhora da qualidade de vida de seus usu\xE1rios. Esses tutoriais ser\xE3o gravados pelos pr\xF3prios alunos do PET-SI, da UFRRJ, de forma que os v\xEDdeos contenham um material did\xE1tico atualizado e objetivo, de forma a trazer uma experi\xEAncia produtiva e recompensadora."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
@@ -84903,6 +84957,17 @@ module.exports = "/images/rural.png?b844ec415e82f71286ed0b80172d8629";
 /***/ (function(module, exports) {
 
 module.exports = "/images/teste.jpg?200cb8034366f5f15071fba0a60a82aa";
+
+/***/ }),
+
+/***/ "./resources/js/components/imgs/turma2018.jpg":
+/*!****************************************************!*\
+  !*** ./resources/js/components/imgs/turma2018.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/turma2018.jpg?8f769f38efe8122c405ad4f1657322c4";
 
 /***/ }),
 

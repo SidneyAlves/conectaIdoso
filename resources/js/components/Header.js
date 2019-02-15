@@ -17,7 +17,7 @@ import React from 'react'
                 <Link className='nav-link' style={estiloHeader} to='/'>Como Utilizar</Link>                
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style={estiloHeader}>Sobre nós</a>
+                <Link className='nav-link' style={estiloHeader} to='/SobreNos'>Sobre o PET</Link>   
               </li>             
             </ul>
             <form class="form-inline my-2 my-lg-0">
