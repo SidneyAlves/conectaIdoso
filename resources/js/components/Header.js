@@ -20,10 +20,10 @@ import React from 'react'
                 <Link className='nav-link' style={estiloHeader} to='/SobreNos'>Sobre o PET</Link>   
               </li>             
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            {/* <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" />
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
-            </form>
+            </form> */}
           </div>
           </div> 
       </nav>

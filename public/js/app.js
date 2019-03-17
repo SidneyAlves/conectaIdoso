@@ -84596,19 +84596,7 @@ var Header = function Header() {
     className: "nav-link",
     style: estiloHeader,
     to: "/SobreNos"
-  }, "Sobre o PET"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    class: "form-inline my-2 my-lg-0"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    class: "form-control mr-sm-2",
-    type: "search",
-    placeholder: "Pesquisar"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    class: "btn btn-outline-success my-2 my-sm-0",
-    type: "submit"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-search",
-    "aria-hidden": "true"
-  }))))));
+  }, "Sobre o PET"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -84989,8 +84977,8 @@ module.exports = "/images/turma2018.jpg?8f769f38efe8122c405ad4f1657322c4";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
