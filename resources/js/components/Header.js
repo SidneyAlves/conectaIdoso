@@ -1,4 +1,4 @@
-import React from 'react'
+    import React from 'react'
     import { Link } from 'react-router-dom'
 
     const Header = () => (
@@ -18,7 +18,10 @@ import React from 'react'
               </li>
               <li class="nav-item">
                 <Link className='nav-link' style={estiloHeader} to='/SobreNos'>Sobre o PET</Link>   
-              </li>             
+              </li>
+              <li class="nav-item">
+                <Link className='nav-link' style={estiloHeader} to='/FaleConosco'>Fale Conosco</Link>   
+              </li>              
             </ul>
             {/* <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" />

@@ -84205,6 +84205,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _VideoSingle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VideoSingle */ "./resources/js/components/VideoSingle.js");
 /* harmony import */ var _PagInicial__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PagInicial */ "./resources/js/components/PagInicial.js");
 /* harmony import */ var _SobreNos__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SobreNos */ "./resources/js/components/SobreNos.js");
+/* harmony import */ var _FaleConosco__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./FaleConosco */ "./resources/js/components/FaleConosco.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -84224,6 +84225,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 // resources/assets/js/components/App.js
+
 
 
 
@@ -84259,6 +84261,9 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/SobreNos",
         component: _SobreNos__WEBPACK_IMPORTED_MODULE_6__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/FaleConosco",
+        component: _FaleConosco__WEBPACK_IMPORTED_MODULE_7__["default"]
       }))));
     }
   }]);
@@ -84314,6 +84319,146 @@ var ConectaIdoso = function ConectaIdoso() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ConectaIdoso);
+
+/***/ }),
+
+/***/ "./resources/js/components/Contato.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/Contato.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Contato =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Contato, _Component);
+
+  function Contato() {
+    var _this;
+
+    _classCallCheck(this, Contato);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Contato).call(this));
+    _this.state = {
+      videos: []
+    };
+    return _this;
+  }
+
+  _createClass(Contato, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row justify-content-md-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-6 col-md-offset-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "well well-sm"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "form-horizontal",
+        action: "",
+        method: "post"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", {
+        className: "text-center"
+      }, "Fale Conosco"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        className: "col-md-12 control-label"
+      }, "Nome"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        id: "nome",
+        name: "nome",
+        type: "text",
+        required: true,
+        placeholder: "Nome",
+        className: "form-control"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        className: "col-md-12 control-label"
+      }, "E-mail"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        id: "email",
+        name: "email",
+        type: "email",
+        required: true,
+        placeholder: "Email",
+        className: "form-control"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        className: "col-md-12 control-label"
+      }, "Assunto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        id: "assunto",
+        name: "assunto",
+        type: "text",
+        required: true,
+        placeholder: "Assunto",
+        className: "form-control"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        className: "col-md-12 control-label"
+      }, "Mensagem"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+        className: "form-control",
+        required: true,
+        id: "mensagem",
+        name: "mensagem",
+        placeholder: "Mensagem",
+        rows: "5"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12 text-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        className: "btn btn-primary btn-lg"
+      }, "Enviar")))))))));
+    }
+  }]);
+
+  return Contato;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Contato);
 
 /***/ }),
 
@@ -84431,6 +84576,40 @@ function (_Component) {
 var estiloCard = {
   color: 'black'
 };
+
+/***/ }),
+
+/***/ "./resources/js/components/FaleConosco.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/FaleConosco.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
+/* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Login */ "./resources/js/components/Login.js");
+/* harmony import */ var _imgs_idosos_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./imgs/idosos.jpg */ "./resources/js/components/imgs/idosos.jpg");
+/* harmony import */ var _imgs_idosos_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_imgs_idosos_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Contato__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Contato */ "./resources/js/components/Contato.js");
+
+
+
+
+
+
+
+
+var FaleConosco = function FaleConosco() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Contato__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FaleConosco);
 
 /***/ }),
 
@@ -84596,7 +84775,13 @@ var Header = function Header() {
     className: "nav-link",
     style: estiloHeader,
     to: "/SobreNos"
-  }, "Sobre o PET"))))));
+  }, "Sobre o PET")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    class: "nav-item"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "nav-link",
+    style: estiloHeader,
+    to: "/FaleConosco"
+  }, "Fale Conosco"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);

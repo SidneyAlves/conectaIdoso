@@ -7,6 +7,7 @@ import ConectaIdoso from './ConectaIdoso'
 import VideoSingle from './VideoSingle'
 import PagInicial from './PagInicial'
 import SobreNos from './SobreNos'
+import FaleConosco from './FaleConosco'
 
 class App extends Component {
     render () {
@@ -18,6 +19,7 @@ class App extends Component {
                     <Route  path='/PagInicial' component={PagInicial} />
                     <Route path='/video/:id' component={VideoSingle} />
                     <Route  path='/SobreNos' component={SobreNos} />
+                    <Route  path='/FaleConosco' component={FaleConosco} />
                 </Switch>
             </div>
         </BrowserRouter>
