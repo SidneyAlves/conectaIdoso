@@ -27,3 +27,6 @@ Route::post('usuarios', 'UsuariosController@store');
 Route::get('usuarios/{id}', 'UsuariosController@show');
 Route::put('usuarios/{id}', 'UsuariosController@update');
 Route::delete('usuarios/{id}', 'UsuariosController@destroy');
+
+//Contato
+Route::post('/contact', ['as' => 'contact', 'uses' => 'ContactController@contact']);
