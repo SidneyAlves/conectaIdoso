@@ -84338,6 +84338,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -84346,13 +84348,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 
 
@@ -84364,20 +84366,114 @@ function (_Component) {
   _inherits(Contato, _Component);
 
   function Contato() {
-    var _this;
+    var _this2;
 
     _classCallCheck(this, Contato);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Contato).call(this));
-    _this.state = {
-      videos: []
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Contato).call(this));
+    _this2.state = {
+      nome: '',
+      email: '',
+      assunto: '',
+      mensagem: '',
+      isLoading: false,
+      msg: {},
+      msgCls: ''
     };
-    return _this;
+    _this2.handleChange = _this2.handleChange.bind(_assertThisInitialized(_assertThisInitialized(_this2)));
+    _this2.handleSubmit = _this2.handleSubmit.bind(_assertThisInitialized(_assertThisInitialized(_this2)));
+    return _this2;
   }
 
   _createClass(Contato, [{
+    key: "handleChange",
+    value: function handleChange(e) {
+      this.setState(_defineProperty({}, e.target.name, e.target.value));
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      e.preventDefault();
+      console.log(this.state.nome);
+      console.log(this.state.email);
+      console.log(this.state.assunto);
+      console.log(this.state.mensagem);
+
+      var _this = this;
+
+      this.setState({
+        isLoading: true
+      });
+      var _this$state = this.state,
+          nome = _this$state.nome,
+          email = _this$state.email,
+          assunto = _this$state.assunto,
+          mensagem = _this$state.mensagem; //API call goes here
+
+      fetch('/api/contact', {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          nome: nome,
+          email: email,
+          assunto: assunto,
+          mensagem: mensagem
+        })
+      }).then(function (response) {
+        console.log(response.status);
+
+        switch (response.status) {
+          case 200:
+            _this.setState({
+              msgCls: 'alert alert-success'
+            });
+
+            break;
+
+          case 400:
+            _this.setState({
+              msgCls: 'alert alert-danger'
+            });
+
+            break;
+
+          default:
+            _this.setState({
+              msgCls: 'alert alert-danger'
+            });
+
+            break;
+        }
+
+        return response.json();
+      }).then(function (data) {
+        _this.setState({
+          nome: '',
+          email: '',
+          assunto: '',
+          mensagem: '',
+          isLoading: false,
+          msg: data
+        });
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this$state2 = this.state,
+          msg = _this$state2.msg,
+          msgCls = _this$state2.msgCls,
+          nome = _this$state2.nome,
+          email = _this$state2.email,
+          assunto = _this$state2.assunto,
+          mensagem = _this$state2.mensagem,
+          isLoading = _this$state2.isLoading;
+      var msgs = '';
+      Object.keys(msg).forEach(function (key) {
+        msgs += "<p>" + msg[key] + "</p>";
+      });
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -84389,13 +84485,15 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         className: "form-horizontal",
         action: "",
-        method: "post"
+        method: "post",
+        onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", {
         className: "text-center"
       }, "Fale Conosco"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        className: "col-md-12 control-label"
+        className: "col-md-12 control-label",
+        htmlFor: "name"
       }, "Nome"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -84403,12 +84501,15 @@ function (_Component) {
         name: "nome",
         type: "text",
         required: true,
-        placeholder: "Nome",
+        value: nome,
+        onChange: this.handleChange,
+        placeholder: "Seu Nome",
         className: "form-control"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        className: "col-md-12 control-label"
+        className: "col-md-12 control-label",
+        htmlFor: "email"
       }, "E-mail"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -84416,12 +84517,15 @@ function (_Component) {
         name: "email",
         type: "email",
         required: true,
-        placeholder: "Email",
+        value: email,
+        onChange: this.handleChange,
+        placeholder: "Seu email",
         className: "form-control"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        className: "col-md-12 control-label"
+        className: "col-md-12 control-label",
+        htmlFor: "assunto"
       }, "Assunto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -84429,20 +84533,25 @@ function (_Component) {
         name: "assunto",
         type: "text",
         required: true,
-        placeholder: "Assunto",
+        value: assunto,
+        onChange: this.handleChange,
+        placeholder: "Digite o assunto",
         className: "form-control"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        className: "col-md-12 control-label"
+        className: "col-md-12 control-label",
+        htmlFor: "mensagem"
       }, "Mensagem"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
         className: "form-control",
         required: true,
+        value: mensagem,
+        onChange: this.handleChange,
         id: "mensagem",
         name: "mensagem",
-        placeholder: "Mensagem",
+        placeholder: "Digite sua mensagem",
         rows: "5"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
@@ -84451,7 +84560,16 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "submit",
         className: "btn btn-primary btn-lg"
-      }, "Enviar")))))))));
+      }, "Enviar"))), isLoading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hasLoader"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lds-ripple"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null))), msgs && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "".concat(msgCls),
+        dangerouslySetInnerHTML: {
+          __html: msgs
+        }
+      })))))));
     }
   }]);
 
