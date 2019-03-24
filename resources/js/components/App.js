@@ -8,6 +8,7 @@ import VideoSingle from './VideoSingle'
 import PagInicial from './PagInicial'
 import SobreNos from './SobreNos'
 import FaleConosco from './FaleConosco'
+import ComoUtilizar from './ComoUtilizar'
 
 class App extends Component {
     render () {
@@ -20,6 +21,7 @@ class App extends Component {
                     <Route path='/video/:id' component={VideoSingle} />
                     <Route  path='/SobreNos' component={SobreNos} />
                     <Route  path='/FaleConosco' component={FaleConosco} />
+                    <Route  path='/ComoUtilizar' component={ComoUtilizar} />
                 </Switch>
             </div>
         </BrowserRouter>

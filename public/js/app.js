@@ -84206,6 +84206,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PagInicial__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PagInicial */ "./resources/js/components/PagInicial.js");
 /* harmony import */ var _SobreNos__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SobreNos */ "./resources/js/components/SobreNos.js");
 /* harmony import */ var _FaleConosco__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./FaleConosco */ "./resources/js/components/FaleConosco.js");
+/* harmony import */ var _ComoUtilizar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ComoUtilizar */ "./resources/js/components/ComoUtilizar.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -84225,6 +84226,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 // resources/assets/js/components/App.js
+
 
 
 
@@ -84264,6 +84266,9 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/FaleConosco",
         component: _FaleConosco__WEBPACK_IMPORTED_MODULE_7__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/ComoUtilizar",
+        component: _ComoUtilizar__WEBPACK_IMPORTED_MODULE_8__["default"]
       }))));
     }
   }]);
@@ -84272,6 +84277,64 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('app'));
+
+/***/ }),
+
+/***/ "./resources/js/components/ComoUtilizar.js":
+/*!*************************************************!*\
+  !*** ./resources/js/components/ComoUtilizar.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
+/* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Login */ "./resources/js/components/Login.js");
+/* harmony import */ var _imgs_Home_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./imgs/Home.png */ "./resources/js/components/imgs/Home.png");
+/* harmony import */ var _imgs_Home_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_imgs_Home_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _imgs_Player_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./imgs/Player.png */ "./resources/js/components/imgs/Player.png");
+/* harmony import */ var _imgs_Player_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_imgs_Player_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _imgs_Videos_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./imgs/Videos.png */ "./resources/js/components/imgs/Videos.png");
+/* harmony import */ var _imgs_Videos_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_imgs_Videos_png__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
+var ComoUtilizar = function ComoUtilizar() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " w-100 h-100 container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: " mt-2",
+    align: "center"
+  }, "Como Uitilizar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "1) Clique em \"V\xEDdeos\""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _imgs_Home_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    className: "h-100 w-100"
+  })), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "2) Selecione o v\xEDdeo que voc\xEA quer assistir"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _imgs_Videos_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+    className: "h-100 w-100"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "3) Assista o v\xEDdeo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _imgs_Player_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+    className: "h-100 w-100"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ComoUtilizar);
 
 /***/ }),
 
@@ -84306,19 +84369,24 @@ var ConectaIdoso = function ConectaIdoso() {
     className: "col-md-7"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _imgs_idosos_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    className: "h-100 w-100 pt-5 pl-3"
+    className: "h-100 w-100 pt-3 pl-3"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-4 w-100 h-100"
+    className: "col-md-5 w-100 h-100"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: " mt-4",
+    className: " mt-2",
     align: "center"
-  }, "O que \xE9 o ConectaIdoso?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "O que \xE9 o ConectaIdoso?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: estiloP
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     align: "justify",
     className: "w-100 h-100 mt-3"
-  }, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  }, "O ConectaIdoso \xE9 uma plataforma voltada para o ensino de tecnologias atuais para o p\xFAblico da terceira idade. Nosso objetivo \xE9 permitir que o aprendizado seja realizado de forma f\xE1cil e pr\xE1tica, de forma a aumentar a inclus\xE3o dos idosos em um mundo que se mostra cada vez mais conectado. Com tutoriais intuitivos e simples, iremos mostrar como funcionam e como utilizar aplicativos como o Youtube, Whatsapp, Gmail, Facebook, dentre outras ferramentas \xFAteis presentes nos telefones celulares, e que poder\xE3o contribuir para a melhora da qualidade de vida de seus usu\xE1rios. Esses tutoriais ser\xE3o gravados pelos pr\xF3prios alunos do PET-SI, da UFRRJ, de forma que os v\xEDdeos contenham um material did\xE1tico atualizado e objetivo, de forma a trazer uma experi\xEAncia produtiva e recompensadora.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ConectaIdoso);
+var estiloP = {
+  fontSize: 20
+};
 
 /***/ }),
 
@@ -84855,7 +84923,7 @@ var Header = function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "navbar-brand",
+    className: "navbar-brand mr-5",
     style: estiloHeader,
     to: "/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "ConectaIdoso")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -84876,25 +84944,25 @@ var Header = function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     class: "navbar-nav mr-auto mt-2 mt-lg-0 ml-2 "
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    class: "nav-item active"
+    class: "nav-item active pr-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "nav-link",
     style: estiloHeader,
     to: "/PagInicial"
   }, "V\xEDdeos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    class: "nav-item"
+    class: "nav-item pr-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "nav-link",
     style: estiloHeader,
-    to: "/"
+    to: "/ComoUtilizar"
   }, "Como Utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    class: "nav-item"
+    class: "nav-item pr-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "nav-link",
     style: estiloHeader,
     to: "/SobreNos"
   }, "Sobre o PET")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    class: "nav-item"
+    class: "nav-item pr-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "nav-link",
     style: estiloHeader,
@@ -84905,7 +84973,8 @@ var Header = function Header() {
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 var estiloHeader = {
   backgroundColor: 'green',
-  color: 'white'
+  color: 'white',
+  fontSize: 20
 };
 
 /***/ }),
@@ -85024,17 +85093,22 @@ var SobreNos = function SobreNos() {
     src: _imgs_turma2018_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
     className: "h-100 w-100 pt-3 pl-2"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-4 w-100 h-100 ml-3"
+    className: "col-md-5 w-100 h-100"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: " mt-4",
+    className: " mt-2",
     align: "center"
-  }, "Sobre o PET"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Sobre o PET"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: estiloP
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     align: "justify",
     className: "w-100 h-100 mt-3"
   }, "O Programa de Educa\xE7\xE3o Tutorial (PET) \xE9 um programa de comprovada excel\xEAncia, o qual compromete-se fundamentalmente em aprimorar os cursos de gradua\xE7\xE3o. Trabalha com quatro vertentes principais que s\xE3o: Ensino, Cultura, Pesquisa e Extens\xE3o e forma cidad\xE3os que aprendem durante tr\xEAs anos a trabalhar em equipe, a irradiar para os demais colegas o esp\xEDrito de lideran\xE7a e o compromisso com a gera\xE7\xE3o de conhecimento para a solu\xE7\xE3o dos mais diversos problemas. \xC9 o \xFAnico programa institucional voltado para gradua\xE7\xE3o que trabalha no formato de grupo interdisciplinar, ancorado em alunos e professores e que recebe avalia\xE7\xE3o institucional e n\xE3o individual. Cada grupo PET conta com um conjunto de alunos bolsistas, um professor-tutor, v\xE1rios professores colaboradores e, muitas vezes, conta ainda com alunos volunt\xE1rios que ajudam nas atividades do grupo.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SobreNos);
+var estiloP = {
+  fontSize: 20
+};
 
 /***/ }),
 
@@ -85207,6 +85281,39 @@ var estiloCard = {
 
 /***/ }),
 
+/***/ "./resources/js/components/imgs/Home.png":
+/*!***********************************************!*\
+  !*** ./resources/js/components/imgs/Home.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Home.png?51d612d755a8b34a9267ac22b9036f75";
+
+/***/ }),
+
+/***/ "./resources/js/components/imgs/Player.png":
+/*!*************************************************!*\
+  !*** ./resources/js/components/imgs/Player.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Player.png?a1c7096c854122f2ab7a465bb9b80438";
+
+/***/ }),
+
+/***/ "./resources/js/components/imgs/Videos.png":
+/*!*************************************************!*\
+  !*** ./resources/js/components/imgs/Videos.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Videos.png?81816e03a19c56a2f65a0a6336e0205e";
+
+/***/ }),
+
 /***/ "./resources/js/components/imgs/idosos.jpg":
 /*!*************************************************!*\
   !*** ./resources/js/components/imgs/idosos.jpg ***!
@@ -85280,8 +85387,8 @@ module.exports = "/images/turma2018.jpg?8f769f38efe8122c405ad4f1657322c4";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
