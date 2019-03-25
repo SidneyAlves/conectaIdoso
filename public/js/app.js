@@ -84316,7 +84316,7 @@ var ComoUtilizar = function ComoUtilizar() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: " mt-2",
     align: "center"
-  }, "Como Uitilizar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Como Utilizar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "1) Clique em \"V\xEDdeos\""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _imgs_Home_png__WEBPACK_IMPORTED_MODULE_5___default.a,
@@ -84927,7 +84927,7 @@ var Header = function Header() {
     style: estiloHeader,
     to: "/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "ConectaIdoso")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    class: "navbar-toggler",
+    className: "navbar-toggler",
     type: "button",
     "data-toggle": "collapse",
     "data-target": "#hamburguer",
@@ -84936,33 +84936,33 @@ var Header = function Header() {
     "aria-label": "Toggle navigation",
     style: estiloHeader
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    class: "navbar-toggler-icon",
+    className: "navbar-toggler-icon",
     style: estiloHeader
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "collapse navbar-collapse",
+    className: "collapse navbar-collapse",
     id: "hamburguer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    class: "navbar-nav mr-auto mt-2 mt-lg-0 ml-2 "
+    className: "navbar-nav mr-auto mt-2 mt-lg-0 ml-2 "
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    class: "nav-item active pr-2"
+    className: "nav-item active pr-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "nav-link",
     style: estiloHeader,
     to: "/PagInicial"
   }, "V\xEDdeos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    class: "nav-item pr-2"
+    className: "nav-item pr-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "nav-link",
     style: estiloHeader,
     to: "/ComoUtilizar"
   }, "Como Utilizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    class: "nav-item pr-2"
+    className: "nav-item pr-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "nav-link",
     style: estiloHeader,
     to: "/SobreNos"
   }, "Sobre o PET")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    class: "nav-item pr-2"
+    className: "nav-item pr-2"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "nav-link",
     style: estiloHeader,
@@ -85387,8 +85387,8 @@ module.exports = "/images/turma2018.jpg?8f769f38efe8122c405ad4f1657322c4";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
