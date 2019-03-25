@@ -98,7 +98,7 @@ class Contato extends Component {
         });
         return (
         <div className="container">
-           <div className="row justify-content-md-center">
+           <div className="row justify-content-md-center pt-2">
               <div className="col-md-6 col-md-offset-3">
                  <div className="well well-sm">
                  <form className="form-horizontal" action="" method="post" onSubmit={this.handleSubmit}>
@@ -130,7 +130,7 @@ class Contato extends Component {
                     </div>
                     <div className="form-group">
                         <div className="col-md-12 text-right">
-                            <button type="submit" className="btn btn-primary btn-lg">Enviar</button>
+                            <button type="submit" className="btn btn-secondary btn-lg">Enviar</button>
                         </div>
                     </div>
 
