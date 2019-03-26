@@ -85213,7 +85213,9 @@ function (_Component) {
         width: "100%",
         height: "100%",
         className: "h-100"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "justify-content-center font-weight-bold"
+      }, "Descri\xE7\xE3o:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-footer bg-light",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -85222,8 +85224,10 @@ function (_Component) {
         className: "col-md-4  h-100"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-unstyled"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "media border bg-light",
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "text-center mb-1 mt-3"
+      }, "Relacionados"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "media bg-light",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "mr-3",
@@ -85238,7 +85242,7 @@ function (_Component) {
       }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "justify-content-center"
       }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "media my-4 border",
+        className: "media my-4 ",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "mr-3",
@@ -85253,7 +85257,7 @@ function (_Component) {
       }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "justify-content-center"
       }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "media border",
+        className: "media ",
         style: estiloCard
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "mr-3",
@@ -85267,7 +85271,7 @@ function (_Component) {
         className: "mt-0 mb-1"
       }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "justify-content-center"
-      }, "O ConectaIdoso \xE9 uma plataforma voltada para o ensino de tecnologias atuais para o p\xFAblico da terceira idade. Nosso objetivo \xE9 permitir que o aprendizado seja realizado de forma f\xE1cil e pr\xE1tica, de forma a aumentar a inclus\xE3o dos idosos em um mundo que se mostra cada vez mais conectado. Com tutoriais intuitivos e simples, iremos mostrar como funcionam e como utilizar aplicativos como o Youtube, Whatsapp, Gmail, Facebook, dentre outras ferramentas \xFAteis presentes nos telefones celulares, e que poder\xE3o contribuir para a melhora da qualidade de vida de seus usu\xE1rios. Esses tutoriais ser\xE3o gravados pelos pr\xF3prios alunos do PET-SI, da UFRRJ, de forma que os v\xEDdeos contenham um material did\xE1tico atualizado e objetivo, de forma a trazer uma experi\xEAncia produtiva e recompensadora."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
@@ -85276,7 +85280,8 @@ function (_Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (VideoSingle);
 var estiloCard = {
-  color: 'black'
+  color: 'black',
+  border: '0px solid black'
 };
 
 /***/ }),
@@ -85387,8 +85392,8 @@ module.exports = "/images/turma2018.jpg?8f769f38efe8122c405ad4f1657322c4";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\conectaidoso\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\conectaidoso\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\conectaIdoso\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\conectaIdoso\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
